@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004123",
-  "source": "openneuro",
-  "source_id": "ds004123",
+  "pipeline_stage": "enriched",
   "title": "BCIT Traffic Complexity",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jonathan Touryan (data and curation)": {},
     "Greg Apker (data)": {},
@@ -15,26 +15,147 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004123.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887, 10.1080/00222895.2014.959887.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004123",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004123",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2017.02.057",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3389/fnins.2014.00155",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.physbeh.2015.05.026",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1080/00222895.2014.959887",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116361",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2019.116054",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was sponsored by the Army Research Laboratory and was accomplished under Cooperative Agreement Number W911NF-10-0-0002."
+      "funder_name": "Army Research Laboratory",
+      "award_number": "W911NF-10-0-0002"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".ipynb",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "The BCIT Traffic Complexity dataset comprises multimodal neurophysiological and behavioral data including EEG, eye-tracking, and vehicle performance measurements collected during simulated driving tasks designed to assess fatigue-related biomarkers. Participants performed continuous driving under varying visual complexity and perturbation frequency conditions while steering and speed control were monitored. This dataset is part of a larger BCIT driving study collection that includes the Calibration Driving study (ds004118) and the Baseline Driving study (ds004120). Neurophysiological and behavioral measurements are provided for investigating driver fatigue and cognitive workload. Note: Questionnaire data (Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, Visual Analog Scale of Fatigue) are available upon request from cancta.net.",
+  "methods_description": "EEG was recorded using BioSemi 64-channel systems (plus 8 additional channels for eye and mastoid reference) at 2048 Hz sampling rate. Eye tracking was performed with Sensomotoric Instruments REDEYE250. Driving simulator data (steering wheel angle, lane position, heading error) were logged at 100 Hz. Participants completed a practice session (10-15 minutes) followed by counterbalanced Baseline Driving (45 minutes, sparse environment) and Traffic Complexity tasks (varying visual complexity and perturbation frequency). Lateral perturbations were applied to the vehicle, requiring corrective steering responses. Subjective fatigue was assessed using Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "driver fatigue"
+    },
+    {
+      "term": "simulated driving"
+    },
+    {
+      "term": "cognitive workload"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "perturbation"
+    },
+    {
+      "term": "steering control"
+    },
+    {
+      "term": "driving simulator"
+    },
+    {
+      "term": "visual complexity"
+    },
+    {
+      "term": "vehicle performance"
+    },
+    {
+      "term": "lateral perturbation"
+    }
+  ],
+  "source_hash": "4e12cb0e12cb82e6b6e159652fe5572e201bbe4b8db61db877a780e6d494f5f8"
 }
