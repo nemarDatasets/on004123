@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BCIT Traffic Complexity",
+  "description": "The BCIT Traffic Complexity dataset comprises extended neurophysiological recordings during simulated driving tasks designed to assess fatigue-related performance changes. Participants performed continuous driving in a simulator while EEG, eye tracking, and vehicle performance data were collected simultaneously. The study manipulated visual complexity and perturbation frequency to investigate driver fatigue biomarkers and brain-behavior interactions during sustained attention tasks.",
+  "methods_description": "Participants performed simulated driving tasks using a Real Time Technologies driving simulator (900 Hz video refresh rate, 100 Hz vehicle data logging). EEG was recorded using BioSemi 64-channel systems with 8 additional channels (4 eye, 2 mastoid) at 2048 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Dependent measures included reaction times to vehicle perturbations, continuous performance metrics (steering angle, lane position, heading error), and subjective fatigue scales (TIFS, KSS, VAS-F). Baseline Driving consisted of 45 minutes of continuous driving in a visually sparse environment, while Traffic Complexity runs included pedestrians and traffic with manipulated visual complexity and perturbation frequency.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,12 +17,54 @@
     "Tony Johnson (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004123.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "driving simulation"
+    },
+    {
+      "term": "fatigue"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "sustained attention"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "brain-behavior interaction"
+    },
+    {
+      "term": "fatigue biomarkers"
+    },
+    {
+      "term": "perturbation paradigm"
+    },
+    {
+      "term": "performance metrics"
+    },
+    {
+      "term": "driver alertness"
+    },
+    {
+      "term": "visual complexity"
+    },
+    {
+      "term": "lane control"
+    },
+    {
+      "term": "steering correction"
+    },
+    {
+      "term": "simulator sickness"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2014.00155.",
       "identifier_type": "DOI",
@@ -90,6 +134,21 @@
       "identifier": "10.1016/j.neuroimage.2019.116054",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004123.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004118",
+      "identifier_type": "DOI",
+      "relation_type": "IsPartOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004120",
+      "identifier_type": "DOI",
+      "relation_type": "IsPartOf"
     }
   ],
   "funding_references": [
@@ -98,12 +157,12 @@
       "award_number": "W911NF-10-0-0002"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "18.8 GB (50 files)"
   ],
   "formats": [
     ".ipynb",
@@ -112,50 +171,8 @@
     ".set",
     ".tsv",
     ".txt",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "The BCIT Traffic Complexity dataset comprises multimodal neurophysiological and behavioral data including EEG, eye-tracking, and vehicle performance measurements collected during simulated driving tasks designed to assess fatigue-related biomarkers. Participants performed continuous driving under varying visual complexity and perturbation frequency conditions while steering and speed control were monitored. This dataset is part of a larger BCIT driving study collection that includes the Calibration Driving study (ds004118) and the Baseline Driving study (ds004120). Neurophysiological and behavioral measurements are provided for investigating driver fatigue and cognitive workload. Note: Questionnaire data (Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, Visual Analog Scale of Fatigue) are available upon request from cancta.net.",
-  "methods_description": "EEG was recorded using BioSemi 64-channel systems (plus 8 additional channels for eye and mastoid reference) at 2048 Hz sampling rate. Eye tracking was performed with Sensomotoric Instruments REDEYE250. Driving simulator data (steering wheel angle, lane position, heading error) were logged at 100 Hz. Participants completed a practice session (10-15 minutes) followed by counterbalanced Baseline Driving (45 minutes, sparse environment) and Traffic Complexity tasks (varying visual complexity and perturbation frequency). Lateral perturbations were applied to the vehicle, requiring corrective steering responses. Subjective fatigue was assessed using Task-Induced Fatigue Scale (TIFS), Karolinska Sleepiness Scale (KSS), and Visual Analog Scale of Fatigue (VAS-F).",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "driver fatigue"
-    },
-    {
-      "term": "simulated driving"
-    },
-    {
-      "term": "cognitive workload"
-    },
-    {
-      "term": "eye tracking"
-    },
-    {
-      "term": "motor control"
-    },
-    {
-      "term": "fatigue"
-    },
-    {
-      "term": "perturbation"
-    },
-    {
-      "term": "steering control"
-    },
-    {
-      "term": "driving simulator"
-    },
-    {
-      "term": "visual complexity"
-    },
-    {
-      "term": "vehicle performance"
-    },
-    {
-      "term": "lateral perturbation"
-    }
-  ],
-  "source_hash": "4e12cb0e12cb82e6b6e159652fe5572e201bbe4b8db61db877a780e6d494f5f8"
+  "source_hash": "86daadcb1bee51fec045c0a046a6952ceab1c086c4ef3727a43c038465a6eb7f"
 }
