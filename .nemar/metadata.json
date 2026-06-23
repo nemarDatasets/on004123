@@ -1,0 +1,40 @@
+{
+  "version": "2.0",
+  "dataset_id": "on004123",
+  "source": "openneuro",
+  "source_id": "ds004123",
+  "title": "BCIT Traffic Complexity",
+  "authors": {
+    "Jonathan Touryan (data and curation)": {},
+    "Greg Apker (data)": {},
+    "Brent Lance (data)": {},
+    "Scott Kerick (data)": {},
+    "Anthony Ries (data)": {},
+    "Justin Brooks (data)": {},
+    "Kaleb McDowell (data)": {},
+    "Tony Johnson (curation)": {},
+    "Kay Robbins (curation)": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds004123.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.7.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This research was sponsored by the Army Research Laboratory and was accomplished under Cooperative Agreement Number W911NF-10-0-0002."
+    }
+  ]
+}
