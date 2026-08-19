@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BCIT Traffic Complexity",
-  "description": "The BCIT Traffic Complexity dataset comprises extended neurophysiological recordings during simulated driving tasks designed to assess fatigue-related performance changes. Participants performed continuous driving in a simulator while EEG, eye tracking, and vehicle performance data were collected simultaneously. The study manipulated visual complexity and perturbation frequency to investigate driver fatigue biomarkers and brain-behavior interactions during sustained attention tasks.",
-  "methods_description": "Participants performed simulated driving tasks using a Real Time Technologies driving simulator (900 Hz video refresh rate, 100 Hz vehicle data logging). EEG was recorded using BioSemi 64-channel systems with 8 additional channels (4 eye, 2 mastoid) at 2048 Hz sampling rate. Eye tracking was performed using Sensomotoric Instruments REDEYE250. Dependent measures included reaction times to vehicle perturbations, continuous performance metrics (steering angle, lane position, heading error), and subjective fatigue scales (TIFS, KSS, VAS-F). Baseline Driving consisted of 45 minutes of continuous driving in a visually sparse environment, while Traffic Complexity runs included pedestrians and traffic with manipulated visual complexity and perturbation frequency.",
+  "description": "This dataset contains EEG, eye-tracking, and vehicle performance data collected during the BCIT Traffic Complexity study, in which subjects performed a simulated driving task under varying visual complexity and perturbation frequency conditions. The study aimed to identify biomarkers of driver fatigue by comparing EEG-based predictive algorithms to objective performance measures and subjective fatigue scales. Data collection took place at Teledyne Corporation in Durham, NC, and is related to companion datasets on Baseline Driving and Calibration Driving tasks.",
+  "methods_description": "EEG was recorded using BioSemi 64+8 channel systems (including eye and mastoid channels) at a sampling rate of 2048 Hz. Eye tracking was performed with a Sensomotoric Instruments REDEYE250 system, and vehicle data logs were sampled at 100 Hz using a Real Time Technologies driving simulator with a video refresh rate of 900 Hz. Subjects performed Baseline Driving and Traffic Complexity tasks in counter-balanced order, with the vehicle subject to lateral perturbing forces requiring corrective steering. Fatigue was assessed using the Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, and Visual Analog Scale of Fatigue.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,46 +22,32 @@
       "term": "EEG"
     },
     {
-      "term": "driving simulation"
+      "term": "Fatigue",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
     },
     {
-      "term": "fatigue"
+      "term": "Automobile Driving",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001334"
     },
     {
-      "term": "eye tracking"
+      "term": "Eye tracking"
     },
     {
-      "term": "sustained attention"
+      "term": "driving simulator"
     },
     {
-      "term": "motor control"
+      "term": "brain-computer interface"
     },
     {
-      "term": "brain-behavior interaction"
+      "term": "cognitive workload"
     },
     {
       "term": "fatigue biomarkers"
     },
     {
       "term": "perturbation paradigm"
-    },
-    {
-      "term": "performance metrics"
-    },
-    {
-      "term": "driver alertness"
-    },
-    {
-      "term": "visual complexity"
-    },
-    {
-      "term": "lane control"
-    },
-    {
-      "term": "steering correction"
-    },
-    {
-      "term": "simulator sickness"
     }
   ],
   "related_identifiers": [
@@ -101,39 +87,34 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004123",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1016/j.neuroimage.2017.02.057",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.3389/fnins.2014.00155",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1016/j.physbeh.2015.05.026",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1080/00222895.2014.959887",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1016/j.neuroimage.2019.116361",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1016/j.neuroimage.2019.116054",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds004123.v1.0.0",
@@ -149,6 +130,11 @@
       "identifier": "10.18112/openneuro.ds004120",
       "identifier_type": "DOI",
       "relation_type": "IsPartOf"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004123",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
