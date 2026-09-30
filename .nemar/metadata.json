@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCIT Traffic Complexity",
-  "description": "This dataset contains EEG, eye-tracking, and vehicle performance data collected during the BCIT Traffic Complexity study, in which subjects performed a simulated driving task under varying visual complexity and perturbation frequency conditions. The study aimed to identify biomarkers of driver fatigue by comparing EEG-based predictive algorithms to objective performance measures and subjective fatigue scales. Data collection took place at Teledyne Corporation in Durham, NC, and is related to companion datasets on Baseline Driving and Calibration Driving tasks.",
-  "methods_description": "EEG was recorded using BioSemi 64+8 channel systems (including eye and mastoid channels) at a sampling rate of 2048 Hz. Eye tracking was performed with a Sensomotoric Instruments REDEYE250 system, and vehicle data logs were sampled at 100 Hz using a Real Time Technologies driving simulator with a video refresh rate of 900 Hz. Subjects performed Baseline Driving and Traffic Complexity tasks in counter-balanced order, with the vehicle subject to lateral perturbing forces requiring corrective steering. Fatigue was assessed using the Task-Induced Fatigue Scale, Karolinska Sleepiness Scale, and Visual Analog Scale of Fatigue.",
+  "description": "EEG and behavioral recordings from participants performing an extended simulated driving task with modulated visual complexity and perturbation frequency. The study aimed to identify driver fatigue and task performance changes through EEG-based biomarkers, compared against objective performance measures and a non-fatigued calibration driving session. It extends the Baseline Driving paradigm by adding pedestrians and traffic and varying how often lateral perturbations occurred.",
+  "methods_description": "Participants drove in a simulator (steering wheel and pedals) on a long straight road and corrected lateral perturbations to stay in the right-most lane. Recordings included 64-channel BioSemi EEG (plus 4 eye and 2 mastoid channels, 2048 Hz), SMI REDEYE250 eye tracking, and vehicle logs at 100 Hz. Task order versus Baseline Driving was counter-balanced. Fatigue and sleepiness questionnaires (TIFS, KSS, VAS-F) were collected.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,32 +22,19 @@
       "term": "EEG"
     },
     {
-      "term": "Fatigue",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005221"
+      "term": "driving simulation"
     },
     {
-      "term": "Automobile Driving",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001334"
+      "term": "fatigue"
     },
     {
-      "term": "Eye tracking"
+      "term": "eye tracking"
     },
     {
-      "term": "driving simulator"
+      "term": "visual complexity"
     },
     {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "cognitive workload"
-    },
-    {
-      "term": "fatigue biomarkers"
-    },
-    {
-      "term": "perturbation paradigm"
+      "term": "task performance"
     }
   ],
   "related_identifiers": [
@@ -148,7 +135,7 @@
     "eeg"
   ],
   "sizes": [
-    "18.8 GB (50 files)"
+    "17.52 GB (50 files)"
   ],
   "formats": [
     ".ipynb",
